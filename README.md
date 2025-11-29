@@ -1,6 +1,6 @@
 # 📄 Resume Screening Agent
 
-An AI-powered resume screening and ranking system that automates candidate evaluation using GPT-4. Built for the Rooman Technologies AI Agent Development Challenge.
+An AI-powered resume screening and ranking system that automates candidate evaluation using Google Gemini. Built for the Rooman Technologies AI Agent Development Challenge.
 
 ## 🎯 Overview
 
@@ -29,7 +29,7 @@ This agent analyzes resumes against job descriptions and provides:
 ## 🛠️ Tech Stack
 
 - **Framework**: Streamlit (UI)
-- **AI Model**: OpenAI GPT-4o-mini
+- **AI Model**: Google Gemini 2.5 Flash
 - **Document Processing**: PyPDF2, python-docx
 - **Data Handling**: Pandas
 - **Language**: Python 3.8+
@@ -37,14 +37,14 @@ This agent analyzes resumes against job descriptions and provides:
 ## 📋 Prerequisites
 
 1. Python 3.8 or higher
-2. OpenAI API key ([Get it here](https://platform.openai.com/api-keys))
+2. Google Gemini API key ([Get it FREE here](https://makersuite.google.com/app/apikey))
 3. Git (for cloning the repository)
 
 ## 🚀 Setup & Installation
 
 ### 1. Clone the Repository
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/YOUR_USERNAME/resume-screening-agent.git
 cd resume-screening-agent
 ```
 
@@ -64,10 +64,12 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 4. Get OpenAI API Key
-1. Go to https://platform.openai.com/api-keys
-2. Create a new API key
-3. Copy and save it securely
+### 4. Get Google Gemini API Key
+1. Go to https://makersuite.google.com/app/apikey
+2. Sign in with your Google account
+3. Click "Get API Key" or "Create API Key"
+4. Copy and save it securely
+5. **It's completely FREE with generous quotas!**
 
 ## ▶️ Running the Application
 
@@ -80,7 +82,7 @@ The app will open in your browser at `http://localhost:8501`
 
 ### Using the Application
 
-1. **Enter API Key**: Paste your OpenAI API key in the sidebar
+1. **Enter API Key**: Paste your Google Gemini API key in the sidebar
 2. **Add Job Description**: Paste the complete job posting in the text area
 3. **Upload Resumes**: Upload one or more resumes (PDF/DOCX/TXT)
 4. **Analyze**: Click "Analyze & Rank Candidates"
@@ -103,8 +105,8 @@ The app will open in your browser at `http://localhost:8501`
          │
          ▼
 ┌─────────────────┐
-│   OpenAI API    │
-│   (GPT-4o-mini) │
+│  Gemini API     │
+│ (AI Analysis)   │
 └────────┬────────┘
          │
          ▼
@@ -136,10 +138,9 @@ Rank | Candidate      | Score | Recommendation | Skills | Experience | Education
 
 1. **File Size**: Best for resumes under 5MB
 2. **Format Quality**: Scanned PDFs may have poor text extraction
-3. **API Costs**: Each analysis costs ~$0.01-0.02 (GPT-4o-mini pricing)
-4. **Rate Limits**: OpenAI has rate limits (500 requests/min for paid tiers)
+3. **API Limits**: Free tier has generous limits (60 requests/minute)
+4. **Language**: Currently optimized for English resumes
 5. **Subjective Scoring**: AI evaluation may not match human judgment perfectly
-6. **Language**: Currently optimized for English resumes
 
 ## 🔮 Potential Improvements
 
@@ -167,13 +168,13 @@ Rank | Candidate      | Score | Recommendation | Skills | Experience | Education
 ### Common Issues
 
 **Issue**: "API key invalid"
-- **Solution**: Check your OpenAI API key is correct and has credits
+- **Solution**: Check your Google Gemini API key is correct and active
 
 **Issue**: "Cannot extract text from PDF"
 - **Solution**: PDF may be scanned. Try converting to text-based PDF first
 
-**Issue**: "Rate limit exceeded"
-- **Solution**: Wait a few seconds between large batches or upgrade OpenAI plan
+**Issue**: "Model not found error"
+- **Solution**: Update google-generativeai package: `pip install google-generativeai --upgrade`
 
 **Issue**: "Module not found"
 - **Solution**: Run `pip install -r requirements.txt` again
@@ -186,15 +187,17 @@ resume-screening-agent/
 ├── requirements.txt       # Python dependencies
 ├── README.md             # This file
 ├── architecture.png      # Architecture diagram
-└── sample_resumes/       # Sample test files (optional)
+├── DEPLOYMENT.md         # Deployment guide
+├── test_agent.py         # Testing script
+└── test_gemini_models.py # Model compatibility checker
 ```
 
 ## 🔐 Security Notes
 
-- API keys are never stored or logged
-- All processing happens in your environment
+- API keys are entered by user at runtime (not stored in code)
 - No resume data is saved to disk
-- OpenAI retains API data per their policy (30 days for abuse monitoring)
+- All processing happens in your environment
+- Google retains API data per their policy for abuse monitoring
 
 ## 📄 License
 
@@ -202,23 +205,38 @@ This project is submitted for the Rooman Technologies AI Agent Development Chall
 
 ## 👤 Author
 
-**Your Name**
+**[Hardik K M]**
 - Challenge: 48-Hour AI Agent Development
 - Category: People & HR - Resume Screening Agent
-- Submission Date: November 29, 2024
-
-## 🙏 Acknowledgments
-
-- Rooman Technologies for organizing the challenge
-- OpenAI for providing GPT-4 API
-- Streamlit for the amazing framework
+- Submission Date: November 29, 2025
+- Institution: [Sambhram Institute Of Technology]
 
 ## 📞 Contact
 
 For questions or feedback about this project:
-- Email: your.email@example.com
-- GitHub: @yourusername
+- Email: [gowdahardik14@gmail.com]
+- GitHub: [https://github.com/Hardik8369]
+- LinkedIn: [https://www.linkedin.com/in/hardik-k-m-490838319/]
+
+## 🙏 Acknowledgments
+
+- Rooman Technologies for organizing the challenge
+- Google for providing free Gemini API access
+- Streamlit for the amazing framework
+
+## 🎯 Challenge Details
+
+This project was built as part of the Rooman Technologies 48-Hour AI Agent Development Challenge.
+
+**Challenge Requirements Met:**
+- ✅ Fully functional AI Agent
+- ✅ Solves real-world HR problem (Resume Screening)
+- ✅ Built within 48 hours
+- ✅ Working demo deployed
+- ✅ Complete documentation
+- ✅ Architecture diagram included
 
 ---
 
-**Built with ❤️ in 48 hours for Rooman Technologies AI Agent Challenge**
+**Rooman Technologies AI Agent Challenge**
+
