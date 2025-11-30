@@ -55,3 +55,6 @@ temp/
 # Test files
 test_resumes/
 sample_data/
+
+# Test files with API keys (do not commit)
+test_gemini_models.py

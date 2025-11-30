@@ -5,8 +5,8 @@ Run this to see which models work with your API key
 
 import google.generativeai as genai
 
-# PASTE YOUR GEMINI API KEY HERE
-API_KEY = "AIzaSyDZiq-xB8-bWjMqxq5mj2UNPJ1X3E7aeaQ"  
+ # PASTE YOUR GEMINI API KEY HERE
+API_KEY = "YOUR_API_KEY_HERE"  # Replace with your actual key 
 
 print("🔍 Testing Gemini API and listing available models...\n")
 
