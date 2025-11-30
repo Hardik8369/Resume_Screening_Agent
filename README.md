@@ -40,6 +40,27 @@ This agent analyzes resumes against job descriptions and provides:
 2. Google Gemini API key ([Get it FREE here](https://makersuite.google.com/app/apikey))
 3. Git (for cloning the repository)
 
+## 🔑 Getting Your Free Google Gemini API Key
+
+This application requires a Google Gemini API key to function. The good news? It's **completely FREE** with no credit card required!
+
+### Quick Setup (2 minutes):
+1. Visit: https://makersuite.google.com/app/apikey
+2. Sign in with your Google account
+3. Click **"Create API Key"** or **"Get API Key"**
+4. Copy your API key (starts with "AI...")
+5. Paste it in the app sidebar when using the application
+
+### Why You Need Your Own Key:
+- ✅ **Free forever** - Generous free tier (60 requests/minute)
+- ✅ **No credit card** required
+- ✅ **Secure** - Your key, your control
+- ✅ **Privacy** - Your usage data stays private
+- ✅ **Scalable** - More than enough for HR screening workflows
+
+### Security Note:
+This app follows security best practices by having users provide their own API keys rather than hardcoding them. Your key is entered in your browser and sent directly to Google's servers - it's never stored or logged by this application.
+
 ## 🚀 Setup & Installation
 
 ### 1. Clone the Repository
